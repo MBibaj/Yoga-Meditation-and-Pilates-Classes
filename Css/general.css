@@ -1,0 +1,100 @@
+/*
+        ----Typografy:
+
+            -FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            
+            -Font-Wight:
+             -Light: 500 ok
+             -Medium : 600
+             -Bold : 700
+
+            -Letter Spacing:
+             - -0.5px
+             - 1.3px
+
+
+            -Line Height:
+                -Default: 1
+                - 1.05
+
+
+
+        ---- Colors:
+            -Color Palete:
+              -Primary color: #8d8daa;
+              -Accent:
+              -Greys:
+
+            -Tints & Shades 
+                -Tin: #fdf2e9, #f5cba7, #eea564
+                -Shades: #170d03, #5c320e, #a15818
+            
+        ----Shadow:
+        ----Border: 
+        ---- White space:
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.main-container {
+  margin: auto;
+}
+.box {
+  max-width: 100%;
+  margin: auto;
+}
+/* .mb-lg {
+  margin-bottom: 16rem;
+} */
+.mb-md {
+  margin-bottom: 8rem;
+}
+.mb-sm {
+  margin-bottom: 4rem;
+}
+.ml-lg {
+  margin-left: 5rem;
+}
+.mr-lg {
+  margin-right: 5rem;
+}
+.pt-lg {
+  padding-top: 16rem;
+}
+.pb-lg {
+  padding-bottom: 16rem;
+}
+/* .colored-div {
+  background-color: black;
+  /* background-color: rgb(129, 129, 168); */
+/* background-image: url(./Images/girl-beach.jpg); */
+/* background-image: url(./Images/pinkWall.jpg); 
+  
+  background-size: cover;
+  grid-column: 5 / span 1;
+  grid-row: 1 / span2;
+
+  position: relative;
+} */
+
+.sign-in-btn-container {
+  position: absolute;
+  top: 2rem;
+  left: 7rem;
+}
