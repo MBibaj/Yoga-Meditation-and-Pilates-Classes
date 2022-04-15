@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="Css/custom.css" />
     <link rel="stylesheet" href="Css/general.css">
+    <link rel="stylesheet" href="Css/mediaQueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
@@ -47,7 +48,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
           </ul>
     </div> -->
-      <header class="mb-lg box">
+      <header class="mb-lg">
         <div class="bg-image-container">
           <!-- <div class="logo" style="background-color: black;" href="#">
         YMPc</div> -->
@@ -98,16 +99,17 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
             <a  class="btn sign-in-btn"href="signin.html">Sign In</a>
           </p> -->
         </nav>  
-       <div class="content">
-            <h1>Yoga,<br> Meditation  <br>& Pilates Classes</h1>
+       <div class="content box">
+            <h1>Yoga, Meditation & Pilates Classes</h1>
              <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eos
               ut aliquid tempore molestias numquam porro.
             </p>
+            
             <a class="btn join-now-btn" href="#">Join Now</a>
-            <a class="learn-more btn" href="#">More info &rightarrow; </a>
+            <a class="learn-more btn" href="#">More info &rightarrow; </a></div>
              <!-- <p class="cost">22$/monthly or$199/yearly.Cancel anytime.</p>  -->
-          </div>
+         
         <!-- <section class="first__section">
           
 
@@ -115,7 +117,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         </section> -->
       </div>
       </header>
-      <!-- <div class="features-container mb-lg box">
+      <!-- <div class="features-container mb-lg ">
 
       <div class="certification-container mr-lg ml-lg">
       <h3>Our Certification</h3>
@@ -133,57 +135,77 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       </div>
     </div> -->
       
-    <section class="classes__section mb-lg  pt-lg pb-lg">
+    <section class="classes__section mb-lg  pt-md ">
       <div class="classes-header mb-sm">
         <h2 >Dive in our world </h2>
        
       </div>
        
-    <div class="classes-content"> 
-<div  class="types-of-classes">
+  <div class="classes-content classes-media"> 
 
-  <div class="bg-img-1 mb-sm gradient">
-    <img src="Images/anastasia-hisel-oP3BODek8Fc-unsplash.jpg" alt="">
-  </div>    
-  <div><h2>Yoga </h2></div>
-  <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad itaque illo quam quos culpa fuga, possimus dicta facilis accusantium non sit, atque, praesentium quis omnis fugiat necessitatibus? Fuga, ipsam quisquam.</p></div>
-  <div><a class="btn-read-more btn" href="#">Learn more </a></div>
 
-</div>
-<div  class="types-of-classes">
-  <div class="bg-img-1 mb-sm gradient">
-    <img src="Images/pexels-cottonbro-4324098.jpg" alt="">
-  </div>  
-  <div><h2>Meditation </h2></div>
-  <div><p>Lorem, ipsum dolor con min tinsit amet consectetur adipisicing elit. Quae suscipit accusantium, et, perferendis fugit quisquam eaque consequatur atque animi a voluptatem soluta distinctio repellat praesentium.</p></div>
-  <div><a class="btn-read-more btn" href="#">Learn more </a></div>
-
-</div>
-
-<div  class="types-of-classes">
-  <div class="bg-img-1 mb-sm gradient">
-    <img src="Images//pexels-alena-darmel-7222634.jpg" alt="">
-  </div>  
-  <div><h2>Pilates </h2></div>
-  <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi cupiditate temporibus pariatur voluptate eos veniam deleniti, numquam vitae et quae asperiores, facilis inventore. Laudantium ipsa numquam placeat illo?</p></div>
-  <div><a class="btn-read-more btn" href="#">Learn more</a></div>
-
-</div>
-</div>
+  <div class="yoga-container">
+    <div class="bg-img bg-img-1 mb-sm gradient" id="1">
+      <img src="Images/anastasia-hisel-oP3BODek8Fc-unsplash.jpg" alt="">
+    </div>
+    <div class="yoga-description class " id="1-2">
+      <h2>Yoga </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Ad itaque illo quam quos culpa fuga, possimus dicta facilis accusantium non sit,
+         atque, praesentium quis omnis fugiat necessitatibus? Fuga, ipsam quisquam.</p>
+      <a class="btn-read-more btn" href="#">Learn more </a>
+    </div>
+  </div>
 
 
 
 
+  <div class="meditation-container ">
+    <div class="bg-img bg-img-2 mb-sm gradient" id="2">
+      <img src="Images/pexels-cottonbro-4324098.jpg" alt="">
+    </div>
+    <div class="meditation-description class " id="2-2">
+      <h2>Meditation </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Ad itaque illo quam quos culpa fuga, possimus dicta facilis accusantium non sit,
+         atque, praesentium quis omnis fugiat necessitatibus? Fuga, ipsam quisquam.</p>
+      <a class="btn-read-more btn" href="#">Learn more </a>
+    </div>
+  </div>
 
+
+
+
+
+  <div class="pilates-container">
+    <div class="bg-img bg-img-3 mb-sm gradient" id="3">
+      <img src="Images/pexels-alena-darmel-7222634.jpg" alt="">
+    </div>
+    <div class="pilates-description class" id="3-3">
+      <h2>Pilates </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Ad itaque illo quam quos culpa fuga, possimus dicta facilis accusantium non sit,
+         atque, praesentium quis omnis fugiat necessitatibus? Fuga, ipsam quisquam.</p>
+      <a class="btn-read-more btn" href="#">Learn more </a>
+    </div>
+  </div>
     </section>
     
     
     
     <section class="quote-container mb-lg">
  <div class="quote"><p>Life is a balance of holding on and letting go...</p></div>
+ <!-- <img class="quote-img first-image" src="Images/pexels-marcus-aurelius-6787205.jpg" alt="">
+
+ <img class="quote-img second-image" src="Images/outdoor1 (5).jpg" alt="">
+ <img class="quote-img third-image  " src="Images/pexels-yan-krukov-4458025.jpg" alt=""> -->
+<!-- <img class="meditation1-img" src="Images/pexels-alena-darmel-7222634.jpg" alt="">
+
+<img class="meditation-img" src="Images/pexels-polina-kovaleva-6019764.jpg" alt="">
+<div class="quote1"><p>Life is a balance of holding on and letting go...</p></div> -->
     </section>
     
-    <section class="studio-online-container mb-lg pb-lg pt-lg">
+    <section class="studio-online-container mb-lg pb-md pt-md">
       <div class="studio-header mb-md"><h2>Strengthen your Mind, Body and Soul 
          </h2></div>
 <div class="studio">
@@ -209,7 +231,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
 
 
-<section class="instructors-section mb-lg ">
+<section class="instructors-section mb-lg pb-md pt-md ">
   
   <div class="inst-headerandp mb-sm">
     <h2> YMPc Instructors</h2>
@@ -218,7 +240,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
   </div>
 
-<div class="instructor-images mb-sm">
+<div class="instructor-images mb-md">
 
  <div class="instructor-container">
    <div class="gradient inst-img"><img class="inst-pic" src="Images/julia-rekamie-Z72YujnOrlY-unsplash.jpg" alt=""></div>
@@ -264,7 +286,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
 
 
-<section class="mobile-app-container mb-lg pb-lg pt-lg">
+<section class="mobile-app-container mb-lg pb-md pt-md">
 <div class="mobile-img">
   <img class="phone-image" src="Images/pexels-nappy-936012.jpg" alt="">
 </div>
@@ -274,9 +296,10 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus aut exercitationem, 
     
     doloribus molestias harum illum. Illo aliquid voluptatem laboriosam nihil est tenetur?</p>
-  <div class="download-container">
-  <a class="btn btn-download" href="#">Download <span><ion-icon name="cloud-download-outline"></ion-icon></span> </a></div>
+  
+  <a class="btn btn-download" href="#">Download <span><ion-icon name="cloud-download-outline"></ion-icon></span> </a>
 </div>
+
 
 
 
@@ -307,7 +330,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         id="email"
         name="email"
         placeholder="Email*"
-        class="input"
+        class="input mb-sm"
       />
       <input
         type="button"
@@ -323,7 +346,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 </section>
 
       <footer>
-<div>
+<!-- <div>
  <ul class="footer__list">
             <li><a href="#"> Studio</a></li>
             <li><a href="#"> Online</a></li>
@@ -334,7 +357,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
             <li><a href="#"> Contact</a></li>
           </ul> 
 
-</div>
+</div> -->
 
 
 

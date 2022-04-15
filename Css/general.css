@@ -23,12 +23,12 @@
         ---- Colors:
             -Color Palete:
               -Primary color: #8d8daa;
-              -Accent:
+              -Accent: #6464aa;
               -Greys:
-
+#FBD6D2,F190B7,CE49BF,A63EC5
             -Tints & Shades 
-                -Tin: #fdf2e9, #f5cba7, #eea564
-                -Shades: #170d03, #5c320e, #a15818
+                -Tin: 
+                -Shades: 
             
         ----Shadow:
         ----Border: 
@@ -57,8 +57,25 @@ body {
 }
 .box {
   max-width: 100%;
-  margin: auto;
+  margin:0 auto;
 }
+h2 {
+  text-align: center;
+  font-size: 3.6rem;
+  color: #444;
+  margin-bottom: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
 /* .mb-lg {
   margin-bottom: 16rem;
 } */
@@ -79,6 +96,12 @@ body {
 }
 .pb-lg {
   padding-bottom: 16rem;
+}
+.pt-md{
+padding-top: 12rem;
+}
+.pb-md{
+  padding-bottom: 12rem;
 }
 /* .colored-div {
   background-color: black;
