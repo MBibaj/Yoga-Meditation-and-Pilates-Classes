@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yoga,Meditation and Pilates classes, Online and in-studio">
     <title>Document</title>
-    <link rel="stylesheet" href="Css/custom.css" />
-    <link rel="stylesheet" href="Css/general.css">
-    <link rel="stylesheet" href="Css/mediaQueries.css">
+    <link rel="stylesheet" href="Css/custom.css" media=""/>
+    <link rel="stylesheet" href="Css/general.css" media="">
+    <link rel="stylesheet" href="Css/mediaQueries.css" media="">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     
@@ -23,6 +25,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
 nomodule
 src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 ></script>  
+
   </head>
   <body>
     <div class="main-container">
@@ -48,7 +51,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
           </ul>
     </div> -->
-      <header class="mb-lg">
+      <header class="mb-lg" id="header">
         <div class="bg-image-container">
           <!-- <div class="logo" style="background-color: black;" href="#">
         YMPc</div> -->
@@ -76,31 +79,38 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
           <a class="logo" href="#">
              YMPc</a>
           <nav class="navbar">
+            <div class="nav-bar">
+            <ul class="navbar__list">
+              <li><a href="#"> Studio</a></li>
+              <li><a href="#"> Online</a></li>
+              <li><a href="#"> Schedule</a></li>
+              <li><a href="#"> Shop</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#"> Contact</a></li>
+              <li><a  class="btn login-btn" href="#"> Login</a></li>
+      
+                </ul>
+          </div>
           <ul>
             <!-- <li><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li> -->
-            <li><a class="menu" href="#">Menu</a></li>
+            <!-- <li><a class="menu" href="#">Menu</a></li> -->
+            <button class="mobile-nav">
+              <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+              <ion-icon class="mobile-nav-icon" name="close-outline"></ion-icon>
+            </button>
           </ul> 
           </nav> 
         </div> 
          
-         <!-- <ul>
+        
+           
             
-          </ul>
-           -->
-           <!-- <ul class="navbar__list">
-            <li><a href="#"> Studio</a></li>
-            <li><a href="#"> Online</a></li>
-            <li><a href="#"> Schedule</a></li>
-            <li><a href="#"> Shop</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#"> Contact</a></li>
-          </ul>  -->
           <!-- <p class="sign-in-btn-container">
             <a  class="btn sign-in-btn"href="signin.html">Sign In</a>
           </p> -->
         </nav>  
        <div class="content box">
-            <h1>Yoga, Meditation & Pilates Classes</h1>
+            <h1><span class="yoga">Yoga,</span> Meditation & Pilates Classes</h1>
              <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eos
               ut aliquid tempore molestias numquam porro.
@@ -135,8 +145,8 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       </div>
     </div> -->
       
-    <section class="classes__section mb-lg  pt-md ">
-      <div class="classes-header mb-sm">
+    <section class="classes__section mb-lg  pt-md pb-md">
+      <div class="classes-header">
         <h2 >Dive in our world </h2>
        
       </div>
@@ -144,7 +154,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
   <div class="classes-content classes-media"> 
 
 
-  <div class="yoga-container">
+  <div class="yoga-container class-container">
     <div class="bg-img bg-img-1 mb-sm gradient" id="1">
       <img src="Images/anastasia-hisel-oP3BODek8Fc-unsplash (1).jpg" alt="">
     </div>
@@ -160,7 +170,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
 
 
-  <div class="meditation-container ">
+  <div class="meditation-container class-container">
     <div class="bg-img bg-img-2 mb-sm gradient" id="2">
       <img src="Images/pexels-cottonbro-4324098-sq.jpg" alt="">
     </div>
@@ -177,7 +187,7 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 
 
 
-  <div class="pilates-container">
+  <div class="pilates-container class-container">
     <div class="bg-img bg-img-3 mb-sm gradient" id="3">
       <img src="Images/anastasia-hisel1.jpg" alt="">
     </div>
@@ -189,22 +199,24 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       <a class="btn-read-more btn" href="#">Learn more </a>
     </div>
   </div>
+
+  
     </section>
     
     
     
-    <section class="quote-container mb-lg">
- <div class="quote"><p>Life is a balance of holding on and letting go...</p></div>
- <!-- <img class="quote-img first-image" src="Images/pexels-marcus-aurelius-6787205.jpg" alt="">
+    <!-- <section class="quote-container mb-lg">
+ <div class="quote"><p>Life is a balance of holding on and letting go...</p></div> -->
+  <!-- <img class="quote-img first-image" src="Images/pexels-marcus-aurelius-6787205.jpg" alt="">
 
  <img class="quote-img second-image" src="Images/outdoor1 (5).jpg" alt="">
- <img class="quote-img third-image  " src="Images/pexels-yan-krukov-4458025.jpg" alt=""> -->
-<!-- <img class="meditation1-img" src="Images/pexels-alena-darmel-7222634.jpg" alt="">
+ <img class="quote-img third-image  " src="Images/pexels-yan-krukov-4458025.jpg" alt=""> --> 
+ <!-- <img class="meditation1-img" src="Images/pexels-alena-darmel-7222634.jpg" alt="">
 
 <img class="meditation-img" src="Images/pexels-polina-kovaleva-6019764.jpg" alt="">
 <div class="quote1"><p>Life is a balance of holding on and letting go...</p></div> -->
     </section>
-    
+<!--     
     <section class="studio-online-container mb-lg pb-md pt-md">
       <div class="studio-header mb-md"><h2>Strengthen your Mind, Body and Soul 
          </h2></div>
@@ -215,14 +227,41 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       ipsum voluptate nulla voluptas dolorum harum est voluptatum!</p>
     <p class="anchor"><a class="btn btn-read" href="#">See all classes</a></p>
   </div>
-  <div class="studio-image gradient"><img src="Images/pexels-yan-krukov-8436746-sq.jpg" alt="In studio class image"></div>
+  <div class="studio-image gradient">
+    <img src="Images/pexels-yan-krukov-8436746-sq.jpg" alt="In studio class image">
+  
+  
+  
+  </div>
 </div>
 <div class="online"></div>
 
+    </section> -->
+
+    <section class="studio-online-container mb-lg pb-md">
+      <div class="studio-header mb-sm pd"><h2>Strengthen your Mind, Body and Soul 
+         </h2></div>
+<div class="studio1">
+  <div class="studio-content1">
+    <p>Check our <strong>in-studio</strong>  and <strong>online</strong> classes and find what's best for you...</p>
+    
+  </div>
+  
+  <div class="online mb-sm">
+  <div class="studio-image1 gradient">
+    <img src="Images/pexels-yan-krukov-8436464.jpg" alt="In studio class image">
+
+  </div>
+  <div class="studio-image1 gradient">
+    <img src="Images/surface-tYOjcQ9NzHY-unsplash.jpg" alt="In studio class image">
+
+  </div>
+</div>
+  <p class="anchor"><a class="btn btn-read" href="#">See all classes</a></p>
+</div>
+
+
     </section>
-
-
-
 
 
 
@@ -283,6 +322,129 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 <a class="btn btn-read" href="#">View All</a>
 </div>
 </section>
+
+
+<section class="pricing pt-md ">
+  <div class="pricing">
+    <div class="pricing-header">
+      <h2 class="secundary-header">Become a valued member</h2>
+      <p></p>
+    </div>
+    <div class="pricing-body">
+      <div class="pricing-card">
+        <div  class="pricing-card-header">
+          <p class="step-header-description">3 Months</p> 
+          <p class="price"> <span>&dollar;</span>40 <span class="month"> / Month</span></p>
+          <p class="total-price">$120 at once</p>
+        </div>
+
+        <div  class="pricing-card-body">
+         <p>
+           <ion-icon name="checkmark-outline"></ion-icon> 
+           <span> On-demand Classes</span>
+         </p>  
+         <p>
+           <ion-icon name="checkmark-outline"></ion-icon>
+           <span>Lorem, ipsum.</span>
+         </p>
+         <p>
+           <ion-icon name="checkmark-outline"></ion-icon>
+           <span> Digital Quarterly events</span>
+         </p> 
+         <p>
+           <ion-icon name="checkmark-outline"></ion-icon>
+           <span> Lorem, ipsum dolor.
+           </span>
+         </p> 
+
+        </div>
+
+        <div class="pricing-card-footer">
+          <a href="#" class="btn btn-read ">Join now</a>
+        </div>    
+     
+     </div>
+
+     <!--6 months-->
+      <div class="pricing-card">
+        <div  class="pricing-card-header">
+          <p class="step-header-description">6 Months</p> 
+          <p class="price"> <span>&dollar;</span>35 <span class="month"> / Month</span></p>
+          <p class="total-price">$210 at once</p>
+        </div>
+
+        <div  class="pricing-card-body">
+         <p>
+           <ion-icon name="checkmark-outline"></ion-icon> 
+           <span> On-demand Classes</span>
+         </p>  
+         <p>
+           <ion-icon name="checkmark-outline"></ion-icon>
+           <span>Lorem, ipsum.</span>
+         </p>
+         <p>
+           <ion-icon name="checkmark-outline"></ion-icon>
+           <span> Digital Quarterly events</span>
+         </p> 
+         <p>
+           <ion-icon name="checkmark-outline"></ion-icon>
+           <span> Lorem, ipsum dolor.
+           </span>
+         </p> 
+
+        </div>
+
+        <div class="pricing-card-footer">
+          <a href="#" class="btn btn-read ">Join now</a>
+        </div>    
+     
+     </div>
+
+     <div class="pricing-card">
+      <div  class="pricing-card-header">
+        <p class="step-header-description">12 Months</p> 
+        <p class="price"> <span>&dollar;</span>20 <span class="month"> / Month</span></p>
+        <p class="total-price">$240 at once</p>
+      </div>
+
+      <div  class="pricing-card-body">
+       <p>
+         <ion-icon name="checkmark-outline"></ion-icon> 
+         <span> On-demand Classes</span>
+       </p>  
+       <p>
+         <ion-icon name="checkmark-outline"></ion-icon>
+         <span>Lorem, ipsum.</span>
+       </p>
+       <p>
+         <ion-icon name="checkmark-outline"></ion-icon>
+         <span> Digital Quarterly events</span>
+       </p> 
+       <p>
+         <ion-icon name="checkmark-outline"></ion-icon>
+         <span> Lorem, ipsum dolor.
+         </span>
+       </p> 
+
+      </div>
+
+      <div class="pricing-card-footer">
+        <a href="#" class="btn btn-read btn-primary">Join now</a>
+      </div>    
+   
+   </div>
+    </div>
+    
+  </div>
+
+ 
+
+
+
+
+
+
+
 
 
 
@@ -346,8 +508,8 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 </section>
 
       <footer>
-<!-- <div>
- <ul class="footer__list">
+<div>
+ <!-- <ul class="footer__list">
             <li><a href="#"> Studio</a></li>
             <li><a href="#"> Online</a></li>
             <li><a href="#"> Schedule</a></li>
@@ -355,9 +517,9 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
             <li><a href="#">News</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#"> Contact</a></li>
-          </ul> 
+          </ul>  -->
 
-</div> -->
+</div>
 
 
 
@@ -380,5 +542,6 @@ src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         <div class="copyright-con">© 2022 YMPFS</div>
       </footer>
     </div>
+    <script src="./JS/custom.js"></script>
   </body>
 </html>

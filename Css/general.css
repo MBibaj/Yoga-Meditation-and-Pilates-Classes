@@ -29,7 +29,7 @@
             -Tints & Shades 
                 -Tin: 
                 -Shades: 
-            
+            https://colorhunt.co/palette/fbd6d2f190b7ce49bfa63ec5
         ----Shadow:
         ----Border: 
         ---- White space:
@@ -57,7 +57,7 @@ body {
 }
 .box {
   max-width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 h2 {
   text-align: center;
@@ -67,6 +67,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  color: #8d8daa;
 }
 .btn {
   text-decoration: none;
@@ -97,12 +98,19 @@ h2 {
 .pb-lg {
   padding-bottom: 16rem;
 }
-.pt-md{
-padding-top: 12rem;
+.pt-md {
+  padding-top: 12rem;
 }
-.pb-md{
+.pb-md {
   padding-bottom: 12rem;
 }
+
+.pd{
+  padding:0 3rem;
+}
+
+
+
 /* .colored-div {
   background-color: black;
   /* background-color: rgb(129, 129, 168); */
