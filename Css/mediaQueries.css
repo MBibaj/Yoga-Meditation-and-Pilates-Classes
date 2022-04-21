@@ -1,308 +1,311 @@
-@media(min-width:75em){
-    .mobile-nav {
-        display: none;
-      }
-
-     
+@media (min-width: 75em) {
+  .mobile-nav {
+    display: none;
+  }
 }
-
-
 
 @media (max-width: 75em) {
-    html 
-{
+  html {
     font-size: 56.25%;
-}
-.logo-nav-container{
-    /*background-color:transparent;*/
-}
-    
-    .mobile-nav {
-      display: none;
-    }
   }
+  .logo-nav-container {
+    /*background-color:transparent;*/
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
 
 /*when the screen is smaller than 1000px*/
 
+@media (max-width: 1100px) {
+  html {
+    font-size: 50%;
+  }
+  .pricing-card:last-child::after {
+    top: 8%;
+    right: -20%;
+  }
+}
 
-@media(max-width:1100px){
+@media (max-width: 995px) {
+  .content {
+    left: 10%;
+    top: 52%;
+    width: 50%;
+    height: 50%;
+  }
+  .instructor-images {
+    flex-wrap: wrap;
+  }
+  /*-----------Open nav--------------*/
+  header {
+    position: relative;
+  }
 
-    html {
-        font-size: 50%;
-    }
-   
- }
-    
-@media (max-width: 995px){
-    
-    .content{
-        left:10%;
-        top:52%;
-        width:50%;
-        height:50%;
-    }
-        .instructor-images{
-            flex-wrap: wrap;
-        }
-/*-----------Open nav--------------*/
-        header {
-            position: relative;
-          }
-        
-          .mobile-nav {
-            display: block;
-          }
-        
-          .nav-bar {
-            position: fixed;
-            top: 0%;
-            left: 100%;
-            width: 100%;
-            height: 100vh;
-            background-color:rgb(141, 141, 170,0.93); 
-        
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        
-            transition: all 0.3s ease-in-out;
-        
-            /* 1. Opacity: 0  */
-            opacity: 0;
-            /*  2. Set Mouse and keyboard events to none */
-            pointer-events: none;
-        
-            /* 3. Hide element from screen reader */
-            visibility: hidden;
-        
-            /* display: none; */
-        
-            z-index: 10;
-          }
-        .open-nav .nav-bar {
-            opacity: 1;
-            pointer-events: auto;
-            visibility: visible;
-            left: 0%;
-          }
-          
-          .open-nav button {
-            position: fixed;
-            right: 4.8rem;
-            top: 2.4rem;
-            z-index: 99999;
-          }
-          
-          .open-nav ion-icon[name="close-outline"] {
-            display: block;
-          }
-          
-          .open-nav ion-icon[name="menu-outline"] {
-            display: none;
-            z-index: 99999;
-          }
-         
-          .nav-bar .navbar__list {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color:#8d8daa;
-          }
-          .navbar__list a{
-            font-size:3.6rem;
+  .mobile-nav {
+    display: block;
+  }
 
-          }
-          .navbar__list .login-btn {
-            font-size:3.0rem;
-            padding:1.6rem 2.4rem;
+  .nav-bar {
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(141, 141, 170, 0.93);
 
-          }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-          .logo-nav-container{
-            /*  background-color:transparent;*/
-          }
+    transition: all 0.3s ease-in-out;
 
+    /* 1. Opacity: 0  */
+    opacity: 0;
+    /*  2. Set Mouse and keyboard events to none */
+    pointer-events: none;
 
-        }
+    /* 3. Hide element from screen reader */
+    visibility: hidden;
 
- 
+    /* display: none; */
+
+    z-index: 10;
+  }
+  .open-nav .nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    left: 0%;
+  }
+
+  .open-nav button {
+    position: fixed;
+    right: 4.8rem;
+    top: 2.4rem;
+    z-index: 99999;
+  }
+
+  .open-nav ion-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .open-nav ion-icon[name="menu-outline"] {
+    display: none;
+    z-index: 99999;
+  }
+
+  .nav-bar .navbar__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #8d8daa;
+  }
+  .navbar__list a {
+    font-size: 3.6rem;
+  }
+  .navbar__list .login-btn {
+    font-size: 3rem;
+    padding: 1.6rem 2.4rem;
+  }
+
+  .logo-nav-container {
+    /*  background-color:transparent;*/
+  }
+}
+
 /*tablet 768px*/
-@media(max-width:900px){
-    html{
-        font-size: 45%;
-    }
-    header{
-        background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.9)),
-    url(../Images/pexels-алекке-блажин-7700200.jpg);
+@media (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+  header {
+    background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.9)),
+      url(../Images/pexels-алекке-блажин-7700200.jpg);
+  }
+  .content {
+    left: 10%;
+    top: 52%;
+    width: 50%;
+    height: 50%;
+  }
 
+  .mobile-app-container,
+  .studio {
+    gap: 1rem;
+  }
 
-    }
-    .content{
-        left:10%;
-        top:52%;
-        width:50%;
-        height:50%;
-    }
-   
-    .mobile-app-container,
-    .studio{
-        gap:1rem;
-    }
+  .studio-content h3,
+  .studio-content p {
+    padding-left: 3rem;
+  }
+  .studio-content h3 {
+    margin-bottom: 1.5rem;
+  }
+  .pb-lg {
+    padding-bottom: 5rem;
+  }
+  .pt-lg {
+    padding-top: 5rem;
+  }
+  .pb-md {
+    padding-bottom: 5rem;
+  }
+  .pt-md {
+    padding-top: 5rem;
+  }
+  .studio h2 {
+    padding: 3rem;
+  }
 
-    .studio-content h3,
-    .studio-content p{
-        padding-left: 3rem;
-    }
-    .studio-content h3{
-        margin-bottom: 1.5rem;
-    }
-    .pb-lg{
-        padding-bottom: 5rem;
-    }
-    .pt-lg{
-        padding-top: 5rem;
-    }
-    .pb-md{
-        padding-bottom: 5rem;
-    }
-    .pt-md{
-        padding-top: 5rem;
-    }
-.studio h2{
-    padding:3rem;
-}
-
-.subscription-content h3{
+  .subscription-content h3 {
     margin-bottom: 2.4rem;
+  }
 }
 
-}
-/*
-@media(max-width:812px){
-    .pilates-container{
-        width:50rem;
-        grid-column:1/-1;
-        margin-top: 3rem;
-    }
-    .classes-content{
-        
-        align-items: center;
-    }
+@media (max-width: 812px) {
+  .pilates-container {
+    width: 50rem;
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 3rem;
+  }
+  .classes-content {
+    align-items: center;
+  }
 }
 
-@media(max-width:620px){
-    .pilates-container{
-       width:100%;
+@media (max-width: 620px) {
+  .pilates-container {
+    width: 100%;
+  }
+  .classes-content {
+    grid-template-columns: 1fr;
+  }
+  /* .instructor-container{
+        flex-direction: row;
     }
-    .classes-content{
-        grid-template-columns: 1fr;
-    }
-}
-*/
-@media(max-width:860px){
-    .pricing-body{
-        flex-wrap: wrap;
-    }
-}
-@media(max-width:700px){
-    .content{
-        left:-8%;
-        top:50%;
-        width:70%;
-        height:70%;
-    }
-    .studio{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .studio h2{
-        padding:0 2rem;
-    }
-    .studio-content,
-    .mobile-content{
-        max-width:90%;
-    }
-    .studio-image,
-    .mobile-img{
-        max-width:90%;
-        margin-bottom: 2rem;
-
-    }
-    .mobile-app-container{
-      flex-direction: column;
-    }
-    .pb-lg{
-        padding-bottom: 5rem;
-    }
-    .pt-lg{
-        padding-top: 5rem;
-    }
-   .instructors-section{
-       padding:5rem 2rem;
-   }
-   .instructor-content{
-       max-width:90%;
-   }
-   .subscription-content{
-    width:100%; /*Does not affect it*/
-
-   }
-   .subscription-content h3{
-       margin-bottom: 2.4rem;
-   }
-   .mb-sm{
-       margin-bottom: 1.6rem;
-   }
-  
-
-   .pricing-body{
-       flex-wrap: wrap;
-   }
+    .inst-img{
+        height:100%;
+    } */
 }
 
+@media (max-width: 860px) {
+  .pricing-body {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 700px) {
+  .content {
+    left: -8%;
+    top: 50%;
+    width: 70%;
+    height: 70%;
+  }
+  .studio {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-@media(max-width:555px){
+  .studio h2 {
+    padding: 0 2rem;
+  }
+  .studio-content,
+  .mobile-content {
+    max-width: 90%;
+  }
+  .studio-image,
+  .mobile-img {
+    max-width: 90%;
+    margin-bottom: 2rem;
+  }
+  .mobile-app-container {
+    flex-direction: column;
+  }
+  .pb-lg {
+    padding-bottom: 5rem;
+  }
+  .pt-lg {
+    padding-top: 5rem;
+  }
+  .instructors-section {
+    padding: 5rem 2rem;
+  }
+  .instructor-content {
+    max-width: 90%;
+  }
+  .subscription-content {
+    width: 100%; /*Does not affect it*/
+  }
+  .subscription-content h3 {
+    margin-bottom: 2.4rem;
+  }
+  .mb-sm {
+    margin-bottom: 1.6rem;
+  }
 
-    .content{
-        left:-12%;
-        top:45%;
-        width:70%;
-        height:70%;
-    }
-    /* .classes-content{
+  .pricing-body {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 555px) {
+  .content {
+    left: -12%;
+    top: 45%;
+    width: 70%;
+    height: 70%;
+  }
+  /* .classes-content{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     } */
-    .pricing-header
-    {
-     padding:2rem 2rem 0rem 2rem;
-
-    }
+  .pricing-header {
+    padding: 2rem 2rem 0rem 2rem;
+  }
 }
 
-@media(max-width:430px){
-    
-    .content{
-        left:-15%;
-        top:41%;
-        width:70%;
-        height:70%;
-    }
-    /* .classes-content{
+@media (max-width: 430px) {
+  .content {
+    left: -15%;
+    top: 41%;
+    width: 70%;
+    height: 70%;
+  }
+  /* .classes-content{
         display: grid;
         grid-template-columns: 1fr;
     } */
+}
+@media (max-width: 612px) {
+  .online {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .online .studio-image1 {
+    width: 80%;
+  }
+.pricing-card{
+}
+.subscription-content {
+    max-width: 80%;
+}
+}
+
+
+@media (max-width: 650px) {
     
+  .subscription-content {
+      max-width: 80%;
+  }
+  .footer {
+    flex-wrap: wrap;
+    gap:4.8rem;
 }
-@media(max-width:612px){
-    .online{
-        display: flex;
-        flex-direction: column;
-        width:100%;
-    }
-    .online .studio-image1{
-        width:80%;
-    }
-}
+  }
+
+  
